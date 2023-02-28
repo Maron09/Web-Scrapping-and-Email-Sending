@@ -50,7 +50,7 @@ TO = 'example@gmail.com' #recipient email address
 msg = MIMEMultipart()
 
 #msg.add_header('Content-Disposition', 'attachment', filename='empty.txt')
-msg['Subject'] = 'News Top Stories' + '' + str(now.day) + '-' + str(now.month) + '-' + str(now.month) + '-' + str(now.year)
+msg['Subject'] = 'News Top Stories' + ' ' + str(now.day) + '-' + str(now.month) + '-' + str(now.month) + '-' + str(now.year)
 msg['TO'] = TO
 msg['From'] = USERNAME
 
