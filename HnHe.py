@@ -41,7 +41,7 @@ print(("Composing Email...."))
 SERVER = 'smtp.gmail.com' #smtp server
 PORT = 535 #smtp port
 USERNAME = 'example@gmail.com' #email address
-PASSWORD = '********' #email password
+PASSWORD = '**********' #email password - generate app pass from gmail
 TO = 'example@gmail.com' #recipient email address
 
 
@@ -69,7 +69,7 @@ server.login(USERNAME, PASSWORD)
 
 print("Sending Email.....")
 
-server.sendmail(USERNAME, TO)
+# server.sendmail(USERNAME, TO)
 server.sendmail(USERNAME, TO, msg.as_string())
 
 print("Email Sent....")
